@@ -58,3 +58,9 @@ The included workflow automatically deploys the static site whenever you push to
 - Local browser storage can fail when quota is exceeded or in private mode.
 
 MIT licensed. You may adapt and host the app anywhere.
+
+## No-download featured starter project
+
+Open the [RELICFALL starter](https://nothatcher-creator.github.io/Project-workshop/?import=relicfall) or tap **Add RELICFALL** in the sidebar. After confirmation, the project’s notes and assets are imported additively into this browser’s local IndexedDB; existing projects are preserved. The source JSON is available in `imports/relicfall.json`.
+
+This is only a starter planning project, not a published Project0 experience.

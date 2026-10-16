@@ -1,5 +1,5 @@
 /* Cache the application shell, not private project data. User data stays in IndexedDB. */
-const CACHE = 'project-workshop-shell-v2';
+const CACHE = 'project-workshop-shell-v3';
 const SHELL = ['./', './index.html', './style.css', './app.js', './favicon.svg', './manifest.webmanifest'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
