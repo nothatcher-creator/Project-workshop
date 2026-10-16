@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b101c" />
+  <meta name="description" content="Nothatcher Project Workshop — an offline-first creative project planning desk." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <title>Project Workshop — Nothatcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="mobile-scrim" id="mobile-scrim" hidden></div>
+    <aside class="sidebar" id="sidebar" aria-label="Workspace sidebar">
+      <div class="brand"><div class="brand-mark">N<span>.</span></div><div><div class="brand-name">NOTHATCHER<span class="brand-light"> / LAB</span></div><div class="brand-sub">PROJECT WORKSHOP</div></div><button class="icon-button sidebar-close" id="close-sidebar" aria-label="Close sidebar">×</button></div>
+      <div class="side-scroll">
+        <div class="section-title-row"><span class="eyebrow">WORKSPACES</span><button id="new-project-side" class="mini-plus" title="New project" aria-label="New project">+</button></div>
+        <div class="project-switcher" id="project-list"></div>
+        <div class="side-rule"></div>
+        <div class="section-title-row"><span class="eyebrow">PROJECT EXPLORER</span><button class="mini-plus" id="add-folder-side" aria-label="Add folder">+</button></div>
+        <label class="side-search"><span id="search-icon"></span><input id="search" placeholder="Find anything..." autocomplete="off" aria-label="Search project notes" /><kbd>⌘ K</kbd></label>
+        <div class="tree" id="tree" aria-label="Project folders and files"></div>
+      </div>
+      <div class="side-bottom"><div class="local-indicator"><span class="local-dot"></span><div><strong>Local-first workspace</strong><small>Saved in this browser</small></div></div><div class="side-bottom-row"><button class="quiet-link" id="backup-side">Export backup</button><button class="quiet-link" id="import-side">Import</button></div></div>
+    </aside>
+    <main class="main">
+      <div class="topbar"><div class="top-left"><button class="icon-button mobile-menu" id="open-sidebar" aria-label="Open sidebar">☰</button><div id="breadcrumbs" class="breadcrumbs"></div></div><div class="top-actions"><span class="save-status" id="save-status"><span class="status-pip"></span> All changes saved</span><button class="top-action" id="new-note"><span>＋</span> New note</button><button class="top-action primary" id="new-project-main"><span>＋</span> New project</button></div></div>
+      <div class="content" id="content"><div class="loading">Opening your workshop…</div></div>
+    </main>
+  </div>
+  <div class="modal-overlay" id="modal-overlay" hidden><div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"></div></div>
+  <input type="file" id="asset-input" hidden multiple accept="*/*" />
+  <input type="file" id="import-input" hidden accept="application/json,.json" />
+  <div class="toast-stack" id="toasts" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
