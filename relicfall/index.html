@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1"><meta name="theme-color" content="#070b12"><title>RELICFALL — Beneath the Beacon</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="app"><canvas id="game" aria-label="Playable top-down lighthouse roguelike"></canvas>
+<header id="hud"><div id="top-left"><strong>RELICFALL <small>• BENEATH THE BEACON</small></strong><small id="depth">DEPTH 1 / 9</small><div class="meter hp"><div id="hp-fill"></div><span id="hp-text">100 / 100 HP</span></div><div class="meter xp"><div id="xp-fill"></div></div><small id="weapon-label">THE WICKPIERCER</small></div><button id="settings-btn" class="btn" aria-label="Settings and pause">⚙ Settings</button></header>
+<div id="boss-banner" hidden><span id="boss-name"></span><div class="meter"><div id="boss-meter"></div></div></div>
+<div id="toast" aria-live="polite"></div><div id="joystick" aria-label="Movement joystick"><div id="stick"></div></div><div id="actions"><button id="interact-btn" class="action use" aria-label="Interact">USE</button><button id="fire-btn" class="action fire" aria-label="Fire weapon">FIRE</button><button id="dodge-btn" class="action dodge" aria-label="Dodge">DODGE<small id="dodge-status">READY</small></button></div>
+<div id="screen" class="overlay"><section id="panel" class="panel" aria-live="polite"></section></div>
+<footer id="instructions">WASD · Move | Mouse/Space · Attack | Shift · Dodge | E · Interact | P · Pause</footer>
+</div><script src="game.js"></script></body></html>
