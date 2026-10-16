@@ -13,7 +13,9 @@ A polished, **offline-first creative planning workspace** for games, apps, mods,
 - Drag files into the asset library, and drag sidebar items onto other folders on desktop.
 - Quick idea capture, search, note duplication, and project settings.
 - Export a project as a ZIP containing **editable Markdown files and original assets**.
-- Export/import a **full-workspace JSON backup**, including assets.
+- **Additive Import project**: import editable project JSON without replacing existing notes/projects (including assets).
+- Export a single project as editable JSON and import it later.
+- Restore a **full-workspace JSON backup**, including assets (destructive restore is separately labeled).
 - No login, no external dependencies, no analytics or advertising.
 - Responsive desktop/mobile interface (including Android Chrome).
 - Installable progressive web app with cached application shell after first visit.
